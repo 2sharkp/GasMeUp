@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<!--<meta name="description" content="Your description goes here">
+    	<meta name="keywords" content="one, two, three"> -->
+		<!--fonts-->
+		<link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400' rel='stylesheet' type='text/css'>
+
+		<title>GasMeUp! - Find the closest gas station to you!</title>
+		
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+
+		<div id="container">
+
+			<header id="header-container">
+
+				<div class="head-content">
+					<div class="logo-container">
+						<a href="index.html">
+							<img class="logo" src="img/gasmeup-logo.png" alt="Gas Me Up Logo Image Link"></img><h1 class="headliner">GasMeUp</h1>
+						</a>
+					</div>
+					<a href="#" class="hamburger-box">
+						<span class="hamburger-top"></span>
+						<span class="hamburger-patty"></span>
+						<span class="hamburger-bottom"></span>
+					</a>
+					<nav class="header-nav nav-style">
+						<ul>
+							<li class="link-line-up"><a class="link-style" href="about.html">About</a></li>
+							<li class="link-line-up"><a class="link-style" href="contact.html">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+			</header>
+			<div id="mid-container">
+				<div class="mid-content">
+
+					<div class="weather-widget">
+						<p class="location"></p>
+						<p class="temperature"></p>
+						<div class="climate_bg"></div>
+						<div class="info_bg">
+							<img class="dropicon" src="img/Droplet.svg">
+							<p class="humidity"></p>
+							<img class="windicon" src="img/Wind.svg">
+							<div class="windspeed"></div>
+						</div>
+					</div>
+
+					<div id="search-bar">
+
+						<input id="search-input" class="search-width" name="search" type="text" placeholder="Enter a Street, State, Zipcode, etc."></input>
+						
+						<button class="clear button-style">X</button>
+
+						<button id ="location-button" class="button-style" name="location" type="button">Get Location</button>
+<!-- 
+						<button id="go-button" class="button-style" name="go" type="button">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Go!</button> -->
+						
+					</div>
+				</div>
+			</div>
+
+			<div id="map"></div>
+
+			<footer id="footer-container" class="clearfix">
+				<div class="foot-content">
+
+					<nav class="footerlink-nav nav-style">
+						<ul>
+							<li class="link-line-up"><a class="link-style" href="about.html">About</a></li>
+							<li class="link-line-up"><a class="link-style" href="contact.html">Contact</a></li>
+ 						</ul>
+					</nav>
+
+					<nav class="socialicon-nav">
+						<ul>
+							<li class="sociallink-line-up">
+								<a href="https://github.com/2sharkp" target="_blank">
+									<img src="img/github_icon.png"></img>
+								</a>
+							</li>
+							<li class="sociallink-line-up">
+								<a href="https://www.linkedin.com/in/tushar-patel-54434553" target="_blank">
+									<img src="img/linkedin_icon.png"></img>
+								</a>
+							</li>
+							<li class="sociallink-line-up">
+								<a href="https://plus.google.com/+TusharPatel16" target="_blank">
+									<img src="img/googleplus_icon.png"></img>
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</footer>
+
+		</div><!-- #container -->
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.simpleWeather/3.1.0/jquery.simpleWeather.min.js"></script>
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHKY9CRyiMU-n5Yo95onbYenIB4618Htg&libraries=places"></script>
+		<script src="js/main.js"></script> 
+	</body>
+</html>

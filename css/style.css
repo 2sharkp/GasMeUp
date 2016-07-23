@@ -1,0 +1,632 @@
+/* 
+Project Name: Blank Template
+Client: Your Client
+Author: Your Name
+Developer @GA in NYC
+*/
+
+
+/******************************************
+/* SETUP                   
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right; 
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left; 
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* tags (alphabetical)                  
+/*******************************************/
+
+body {
+     color: #000;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: 'Roboto', Helvetica, Arial, sans-serif;
+}
+
+fieldset{
+  border: 0;
+}
+
+label{
+  text-align: left;
+  width: 110px;
+  display: inline-block;
+}
+
+label, span{
+  font-size: 1.2em;
+}
+
+legend{
+  font-size: 1.8em;
+  font-weight: 400;
+}
+
+textarea{
+  width: 400px;
+  height: 100px;
+}
+
+strong{
+/*  padding: 0 5px 0 5px;*/
+}
+
+/******************************************
+/* classes (alphabetical)                  
+/*******************************************/
+
+.button-style{
+  background-repeat: no-repeat;
+  border: 0;
+  border-radius: 4px;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.167em;
+  font-weight: 400;
+}
+
+.foot-content{
+  background-color: #E5E5E5;
+}
+
+.footerlink-nav{
+  float: left;
+}
+
+.header-nav{
+  float: right;
+  margin: 6px 10px 0 0;
+}
+
+.header-nav ul, .socialicon-nav ul{
+  padding: 0;
+}
+
+.headliner{
+  color: black;
+  display: inline-block;
+  font-size: 2em;
+  font-weight: 300;
+  vertical-align: middle;
+}
+
+.link-line-up, .sociallink-line-up{
+  display: inline-block;
+  margin: 0 20px 0 0;
+}
+
+.link-style{
+  padding: 10px;
+}
+
+/* unvisited link */
+.link-style:link {
+  color: black;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+/* visited link */
+.link-style:visited {
+  color: #010101;
+}
+
+/* mouse over link */
+.link-style:hover {
+  border-bottom: 1px solid #787F7D;
+  border-padding: 1px;
+}
+
+/* selected link */
+.link-style:active {
+  color: #FF1B19;
+}
+
+.logo-container{
+  float: left;
+  margin: 0 15px 0 43px;
+}
+
+.logo{
+  padding: 0 10px 0 0;
+  vertical-align: middle;
+}
+
+.mid-content, .mid-content-alt{
+  /*border: 2px solid green;*/
+  height: inherit;
+  margin: 0 auto;
+  padding: 0;
+  width: 960px;
+}
+
+/*mid content container for about and contact pages*/
+
+.nav-style{
+  font-size: 1.667em;
+}
+
+.socialicon-nav{
+  float: right;
+  margin: 2px 25px 0 0;
+}
+
+/******************************************
+/* About and Contact Page Classes            
+/*******************************************/
+
+.content-row{
+  margin: 5px 0 5px 0;
+}
+
+.creator-section, .purpose-section, .tech-section, .form-section{
+  font-family: 'Lato', sans-serif;
+  border-bottom: 2px solid #E5E5E5;
+  margin-left: 50px;
+  font-size: 1.3em;
+  margin-bottom: 20px;
+}
+
+.creator-expand-btn, .purpose-expand-btn, .tech-expand-btn{
+  border: 0;
+  padding: 0;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  background: #E5E5E5;
+  margin-left: 6px;
+}
+
+.hamburger-box{
+    display: none;
+    float: right;  
+    border: 2px solid #000000;
+    padding: 10px;
+    margin: 20px 10px 20px 10px;
+}
+
+.hamburger-top, .hamburger-patty, .hamburger-bottom{
+    display: none;
+    width: 40px;
+    height: 3px;
+    background: #000000;
+    margin: 0 auto 3px;
+}
+
+.main-header, .sub-headers{
+  font-weight: bolder;
+}
+
+.main-header{
+  font-size: 3.5em;
+  text-align: center;
+}
+
+nav.header-nav{
+  display: inline-block;
+}
+
+nav.header-nav.burger-nav{
+  display: inline-block;
+}
+
+.sub-headers{
+  font-size: 2em;
+}
+
+.spacing{
+  margin: 15px;
+}
+
+.spec-link{
+  font-size: 1.2em;
+}
+
+.mid-headliner{
+  text-align: center;
+}
+
+.submit-form-btn{
+  background-color: #377F2B; 
+  padding: 10px 15px 10px 10px;
+  margin-left: 433px;
+}
+
+.submit-form-btn:hover{
+  background-color: #53BF41;
+}
+
+.tp-img{
+  border-radius: 300px 300px 300px 300px;
+     -moz-border-radius: 300px 300px 300px 300px;
+  -webkit-border-radius: 300px 300px 300px 300px;
+  border: 6px solid #E5E5E5;
+  margin: 10px 15px 10px 15px;
+}
+
+.tp-img, .tp-info{
+  float: left;
+}
+
+.tp-info{
+  margin-top: 7px;
+}
+
+
+/******************************************
+/* Weather Widget Classes             
+/*******************************************/
+
+.climate_bg {
+  position: absolute;
+  top: 0px;
+  left: 238px;
+  z-index: 6;
+  width: 163px;
+  height: 151px;
+  border-top-right-radius: 10px;
+  background-color: #FFF;
+}
+
+.dropicon {
+  display: block;
+  position: absolute;
+  top: 12px;
+  left: -1.9110429448%;
+  z-index: 3;
+  width: 41px;
+  height: auto;
+  overflow: hidden;
+}
+
+.humidity {
+  position: absolute;
+  top: 12px;
+  left: 29px;
+  z-index: 2;
+  width: 46px;
+  min-height: 29px;
+  font-size: 1em;
+  line-height: 1.38;
+  text-align: center;
+  color: #ffffff;
+}
+
+.info_bg {
+  position: absolute;
+  top: 150px;
+  left: 238px;
+  z-index: 4;
+  width: 163px;
+  height: 60px;
+  border-bottom-right-radius: 10px;
+  background-color: #1ab1ed;
+}
+
+.info_bg p {
+  margin-bottom: -.2em;
+}
+
+.location {
+  position: absolute;
+  top: 118px;
+  left: 75px;
+  z-index: 8;
+  width: 108px;
+  min-height: 59px;
+  font-size: 1.313em;
+  font-weight: 400;
+  line-height: 1.38;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+}
+
+.not-available, .failed {
+  position: absolute;
+  top: 464px;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  width: 248px;
+  min-height: 24px;
+  margin: 0 auto;
+  font: 0.625em/1.38 'Trebuchet MS';
+  color: rgb(0, 0, 0);
+}
+
+.temperature {
+  position: absolute;
+  top: 38px;
+  left: 62px;
+  z-index: 7;
+  width: 109px;
+  min-height: 28px;
+  margin: 0;
+  font-size: 6em;
+  font-weight: 700;
+  line-height: 1.38;
+  color: rgb(255, 255, 255);
+}
+
+.weathericon {
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 5;
+  width: 160px;
+  height: auto;
+  overflow: hidden;
+}
+
+.weather-widget{
+  position: absolute;
+  top: 40px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 400px;
+  height: 210px;
+  margin: inherit;
+  border-radius: 10px;
+  background-color: rgb(0,0,0); /* black */
+  box-shadow: 0 20px 50px rgba(0,0,0, 0.5); /* black with half transparency */
+  opacity: 0.8;
+}
+
+.windicon {
+  display: block;
+  position: absolute;
+  top: 8px;
+  left: 41.1173312883%;
+  z-index: 1;
+  width: 50px;
+  height: auto;
+  overflow: hidden;
+}
+
+.windspeed {
+  position: absolute;
+  top: 12px;
+  left: 109px;
+  width: 50px;
+  min-height: 29px;
+  font-size: 1em;
+  line-height: 1.38;
+  text-align: center;
+  color: #ffffff;
+}
+
+.windspeed p {
+  margin-bottom: -.2em;
+}
+
+/******************************************
+/* Search Bar Classes             
+/*******************************************/
+
+.clear{
+/*  background-color: #FF1513;*/
+  display: none;
+  color: black;
+  padding: 2px;
+  position: relative;
+  vertical-align: middle;
+  top: 0px;
+  left: -28px;
+}
+
+.clear:hover{
+  background-color: #FF574F;
+}
+
+.search-width{
+  width: 40%;
+  padding: 8px 30px 10px 8px;
+}
+
+#search-bar{
+  display: inline-block;
+  position: absolute;
+  top: 76%;
+  right: 0%;
+  bottom: 57%;
+  left: 0%;
+  text-align: center;
+  margin: inherit;
+}
+
+#search-input{
+  border: 1px solid #ccc;
+  font-size: 1.333em;
+  background:#f1f1f1; 
+}
+
+#go-button{
+  background-color: #377F2B;
+  background-image: url(../img/gasstation-smalllogo.png);
+  background-position: 10px 3px;  /*1st Val: L/R | 2nd Val: Up/Down*/ 
+  padding: 10px 15px 10px 10px;
+}
+
+#go-button:hover{
+  background-color: #53BF41;
+}
+
+#location-button{
+  background-color: #D61515;
+  background-image: url(../img/small-locbuttonimg.png);
+  background-position: 95px 3px; /* 1st Val: L/R | 2nd Val: Up/Down */
+  padding: 10px 45px 10px 10px;
+}
+
+#location-button:hover{
+  background-color: #FF3333;
+}
+
+
+/******************************************
+/* Map             
+/*******************************************/
+
+.iw_table_row {
+  height: 18px;
+}
+
+.iw_attribute_name {
+  font-weight: bold;
+  text-align: right;
+}
+
+#map{
+  border: 2px solid black;
+  height: 500px;
+  margin: 1px;
+  padding: 0;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.2),0 1px 5px 0 rgba(0,0,0,0.12);
+}
+
+
+
+/******************************************
+/* ID's (alphabetical)               
+/*******************************************/
+
+/* Center the container */
+#container, #header-container {
+/*  border: 2px solid black;*/
+  overflow: hidden;
+}
+
+
+#footer-container, #header-container {
+  background-color: #E5E5E5;
+/*  border: 2px solid red;*/
+  box-shadow: 0 2px 2px rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.2),0 1px 5px 0 rgba(0,0,0,0.12);
+  padding: 10px;
+}
+
+#footer-container{
+  box-shadow: inset 0 2px 2px rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.2),0 1px 5px 0 rgba(0,0,0,0.12);
+}
+
+#mid-container{
+  height: 400px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.2),0 1px 5px 0 rgba(0,0,0,0.12);
+/*  border: 2px solid green;*/
+  position: relative;
+}
+
+/*mid container for about and contact pages*/
+#mid-container-alt{
+
+}
+
+
+
+
+/******************************************
+/* Media Queries (responsive per device)              
+/*******************************************/
+
+/*Vertical widths*/
+@media (min-width: 297px) and (max-width: 568px) { /**Galaxy, Nexus phones, iPhone 6+**/
+
+  nav.header-nav{
+    display: none;
+  }
+
+  .hamburger-box{
+    display: block;
+  }
+
+  .hamburger-top, .hamburger-patty, .hamburger-bottom{
+    display: block;
+  }
+  
+  .logo-container{
+    float: left;
+    margin: 0;
+  }
+
+  .link-line-up{
+    margin: 0 130px 15px 0;
+  }
+
+  ul{
+    margin: 0;
+    margin-top: 10px;
+  }
+
+  .socialicon-nav{
+    float: none;
+    text-align: center;
+    margin: 0;
+  }
+
+  .headliner{
+    font-size: 2.1em;
+    font-weight: bolder;
+  }
+
+  .weather-widget{
+    display: none;
+  }
+
+  #search-bar{
+    top: 15%;
+    display: block;
+  }
+
+  .search-width{
+    width: 75%;
+  }
+
+  #location-button{
+    margin-top: 15px;
+  }
+
+  #mid-container{
+    height: 140px;
+  }
+
+  #map{
+    height: 460px;
+  }
+
+  .footerlink-nav{
+    display: none;
+  }
+}
+
+
+
